@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public Text coinText;
     int coins;
 
-
+    public List<GameObject> enemiesInScreen = new List<GameObject>();
     void Update()
     {
 
