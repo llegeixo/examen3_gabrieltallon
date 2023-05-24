@@ -3289,11 +3289,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &306825847 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-  m_PrefabInstance: {fileID: 733301567}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &338643694
 GameObject:
   m_ObjectHideFlags: 0
@@ -6302,63 +6297,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &733301567
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1063828495}
-    m_Modifications:
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -100.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6020508820765672836, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7845478236385138864, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
-      propertyPath: m_Name
-      value: Bullet
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
 --- !u!1 &733873145
 GameObject:
   m_ObjectHideFlags: 0
@@ -9408,8 +9346,7 @@ Transform:
   m_LocalPosition: {x: 1.03, y: 0.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 306825847}
+  m_Children: []
   m_Father: {fileID: 7102897459548015061}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17558,7 +17495,7 @@ PrefabInstance:
     - target: {fileID: 7102897459264945057, guid: 457cbd0a68e12d34aa6e0bc2bcb40d2c, type: 3}
       propertyPath: bulletSpawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1063828495}
     - target: {fileID: 7102897459264945057, guid: 457cbd0a68e12d34aa6e0bc2bcb40d2c, type: 3}
       propertyPath: attackHitBox
       value: 
@@ -17566,7 +17503,7 @@ PrefabInstance:
     - target: {fileID: 7102897459264945057, guid: 457cbd0a68e12d34aa6e0bc2bcb40d2c, type: 3}
       propertyPath: bulletPrefab
       value: 
-      objectReference: {fileID: 3049967276280573395, guid: d5c558abf0281494b9ea53675a831220, type: 3}
+      objectReference: {fileID: 7845478236385138864, guid: e55738706a3314d458e4af7afe3b8824, type: 3}
     - target: {fileID: 7102897459264945057, guid: 457cbd0a68e12d34aa6e0bc2bcb40d2c, type: 3}
       propertyPath: enemyLayer.m_Bits
       value: 64
