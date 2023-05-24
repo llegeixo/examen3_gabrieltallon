@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour
     GameManager gameManager;
     SFXManager sfxManager;
 
+    public GameObject bulletPrefab;
+    public Transform bulletSpawn;
+
     void Awake()
     {
         //Asignamos la variables del SpriteRender con el componente que tiene este objeto
@@ -38,12 +41,18 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
 
 
+
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        }
+        
         if(gameManager.isGameOver == false)
         {
             horizontal = Input.GetAxis("Horizontal");
